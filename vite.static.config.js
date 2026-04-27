@@ -14,12 +14,12 @@ export default defineConfig({
       name: "copy-index-html",
       apply: "build",
       writeBundle() {
-        // Copy index-static.html to index.html for GitHub Pages
-        const sourceFile = path.resolve(__dirname, "dist-static/index-static.html");
-        const destFile = path.resolve(__dirname, "dist-static/index.html");
+        // Copy index.html to 404.html for GitHub Pages SPA routing
+        const sourceFile = path.resolve(__dirname, "dist-static/index.html");
+        const destFile = path.resolve(__dirname, "dist-static/404.html");
         if (fs.existsSync(sourceFile)) {
           fs.copyFileSync(sourceFile, destFile);
-          console.log("✓ Copied index-static.html to index.html");
+          console.log("✓ Copied index.html to 404.html");
         }
       },
     },
@@ -34,7 +34,7 @@ export default defineConfig({
     emptyOutDir: true,
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "index-static.html"),
+        main: path.resolve(__dirname, "index.html"),
       },
     },
   },
