@@ -30,45 +30,16 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build
-        run: npm run build
+      - name: Build static site
+        run: npm run build:static
 
-      - name: Generate index.html with correct assets
+      - name: Add SPA routing support
         run: |
-          # Find the generated asset files
-          JS_FILE=$(ls dist/client/assets/index-*.js | grep -v 'index-Bun' | head -1 | xargs basename)
-          CSS_FILE=$(ls dist/client/assets/styles-*.css | head -1 | xargs basename)
-
-          echo "JS file: $JS_FILE"
-          echo "CSS file: $CSS_FILE"
-
-          # Generate index.html
-          cat > dist/client/index.html << EOF
-          <!DOCTYPE html>
-          <html lang="en">
-            <head>
-              <meta charset="UTF-8" />
-              <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-              <title>Kaviya Balamurugan — Java Full Stack Developer & AWS Cloud Engineer</title>
-              <meta name="description" content="Portfolio of Kaviya Balamurugan — Java Full Stack Developer and AWS Cloud Engineer building scalable apps and reliable cloud systems." />
-              <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
-              <script type="module" crossorigin src="/personal_portfolio/assets/$JS_FILE"></script>
-              <link rel="stylesheet" crossorigin href="/personal_portfolio/assets/$CSS_FILE" />
-            </head>
-            <body>
-              <div id="root"></div>
-            </body>
-          </html>
-          EOF
-
-          # Copy for SPA routing (GitHub Pages 404 fallback)
-          cp dist/client/index.html dist/client/404.html
-
-          echo "=== Generated dist/client/index.html ==="
-          cat dist/client/index.html
-
-          echo "=== dist/client contents ==="
-          ls -la dist/client/
+          cp dist-static/index.html dist-static/404.html
+          echo "=== dist-static contents ==="
+          ls -la dist-static/
+          echo "=== Assets ==="
+          ls -la dist-static/assets/ || echo "No assets dir"
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -76,7 +47,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist/client
+          path: ./dist-static
 
   deploy:
     environment:
@@ -88,4 +59,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
