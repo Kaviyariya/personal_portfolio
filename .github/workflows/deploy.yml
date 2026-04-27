@@ -35,7 +35,7 @@ jobs:
 
       - name: Add SPA routing support
         run: |
-          cp dist-static/index.html dist-static/404.html
+          cp dist-static/index-static.html dist-static/404.html
           echo "=== dist-static contents ==="
           ls -la dist-static/
           echo "=== Assets ==="
