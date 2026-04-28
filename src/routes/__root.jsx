@@ -68,11 +68,11 @@ function RootShell({ children }) {
 
 function RootComponent() {
   return (
-    <div className="flex min-h-screen flex-col overflow-x-hidden">
+    <div className="flex min-h-[100dvh] flex-col overflow-x-hidden bg-[oklch(0.13_0.04_265)]">
       <Navbar />
-      <div className="flex-1">
+      <main className="flex-1">
         <Outlet />
-      </div>
+      </main>
       <Footer />
     </div>
   );

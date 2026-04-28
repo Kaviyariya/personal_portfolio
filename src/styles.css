@@ -135,15 +135,18 @@
   html {
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background: oklch(0.13 0.04 265);
+    overscroll-behavior-y: none;
   }
 
   body {
     background: var(--gradient-hero);
     background-attachment: fixed;
+    background-color: oklch(0.13 0.04 265);
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
-    min-height: 100vh;
+    min-height: 100dvh;
     overflow-x: hidden;
   }
 

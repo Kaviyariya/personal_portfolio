@@ -1,12 +1,12 @@
 # Kaviya Balamurugan — Personal Portfolio
 
-[![Deploy to GitHub Pages](https://github.com/Kaviyariya/portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/Kaviyariya/portfolio/actions/workflows/deploy.yml)
+[![Deploy to GitHub Pages](https://github.com/Kaviyariya/personal_portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/Kaviyariya/personal_portfolio/actions/workflows/deploy.yml)
 
 > A modern, responsive personal portfolio website built with React, Vite, and Tailwind CSS.
 
 ## 🔗 Live Demo
 
-**[https://kaviyariya.github.io/portfolio](https://kaviyariya.github.io/portfolio)**
+**[https://kaviyariya.github.io/personal_portfolio](https://kaviyariya.github.io/personal_portfolio)**
 
 ## ✨ Features
 
@@ -32,7 +32,7 @@
 ## 📁 Project Structure
 
 ```
-portfolio/
+personal_portfolio/
 ├── .github/workflows/    # CI/CD deployment workflow
 ├── src/
 │   ├── components/       # Reusable UI components
@@ -59,8 +59,8 @@ portfolio/
 
 ```bash
 # Clone the repository
-git clone https://github.com/Kaviyariya/portfolio.git
-cd portfolio
+git clone https://github.com/Kaviyariya/personal_portfolio.git
+cd personal_portfolio
 
 # Install dependencies
 npm install
@@ -103,7 +103,7 @@ To enable GitHub Pages:
 1. Go to **Settings → Pages** in your repository
 2. Under **Build and deployment**, select **GitHub Actions**
 3. The workflow `.github/workflows/deploy.yml` will run automatically on push
-4. Your site will be live at `https://kaviyariya.github.io/portfolio`
+4. Your site will be live at `https://kaviyariya.github.io/personal_portfolio`
 
 ## 📬 Contact
 

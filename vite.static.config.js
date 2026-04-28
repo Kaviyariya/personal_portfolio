@@ -5,7 +5,7 @@ import path from "path";
 import fs from "fs";
 
 export default defineConfig({
-  base: "/portfolio/",
+  base: "/personal_portfolio/",
   publicDir: "public",
   plugins: [
     react(),
