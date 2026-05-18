@@ -52,9 +52,7 @@ export function Hero({
               <ArrowRight className="h-4 w-4 transition-smooth group-hover:translate-x-1" />
             </button>
             <a
-              href="https://drive.google.com/file/d/1sYWswOmO6AWCAgzAHv1kdn3DRDK3LC-Z/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://drive.google.com/uc?export=download&id=1sYWswOmO6AWCAgzAHv1kdn3DRDK3LC-Z"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card/40 px-7 py-3 text-sm font-semibold text-foreground backdrop-blur transition-smooth hover:border-primary hover:text-primary"
             >
               Resume <Download className="h-4 w-4" />
