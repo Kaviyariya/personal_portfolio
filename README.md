@@ -105,11 +105,60 @@ To enable GitHub Pages:
 3. The workflow `.github/workflows/deploy.yml` will run automatically on push
 4. Your site will be live at `https://kaviyariya.github.io/personal_portfolio`
 
+## 🎨 Customization
+
+### Update Your Information
+
+Edit the relevant files to customize your portfolio:
+- **Personal Details** — Update in component files
+- **Project Information** — Modify project data in your components
+- **Styling** — Customize Tailwind CSS theme in `tailwind.config.js`
+
+### Add New Sections
+
+1. Create a new component in `src/components/sections/`
+2. Add the route in `src/routes/`
+3. Update the router configuration in `src/router.jsx`
+
+## 📦 Dependencies
+
+All dependencies are listed in `package.json`. Key packages:
+- **react** — UI library
+- **vite** — Build tool and dev server
+- **tailwindcss** — Utility-first CSS framework
+- **shadcn/ui** — Pre-built UI components
+- **react-hook-form** — Form management
+- **zod** — Schema validation
+
+## 🧪 Testing & Linting
+
+```bash
+# Run ESLint
+npm run lint
+
+# Format code with Prettier
+npm run format
+```
+
+## 📄 License
+
+This project is open source and available under the MIT License.
+
+## 🤝 Contributing
+
+Found a bug or have a feature suggestion? Feel free to:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
 ## 📬 Contact
 
 Feel free to reach out if you have any questions or suggestions!
 
 - **GitHub**: [@Kaviyariya](https://github.com/Kaviyariya)
+- **Portfolio**: [https://kaviyariya.github.io/personal_portfolio](https://kaviyariya.github.io/personal_portfolio)
 
 ---
 
