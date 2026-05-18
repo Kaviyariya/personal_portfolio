@@ -1,4 +1,3 @@
-import { Link, useRouter } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
@@ -7,8 +6,7 @@ const links = [
   { hash: "about", label: "About" },
   { hash: "skills", label: "Skills" },
   { hash: "projects", label: "Projects" },
-  { hash: "certifications", label: "Certifications" },
-  { hash: "experience", label: "Experience" },
+  { hash: "experience", label: "Experience & Certifications" },
   { hash: "interests", label: "Interests" },
   { hash: "contact", label: "Contact" },
 ];
@@ -16,7 +14,6 @@ const links = [
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
-  const router = useRouter();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 12);
@@ -34,14 +31,9 @@ export function Navbar() {
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
   };
 
-  const handleHashClick = async (hash) => {
+  const handleHashClick = (hash) => {
     setOpen(false);
-    if (router.state.location.pathname !== "/") {
-      await router.navigate({ to: "/" });
-      setTimeout(() => scrollToHash(hash), 100);
-    } else {
-      scrollToHash(hash);
-    }
+    scrollToHash(hash);
   };
 
   return (
@@ -51,14 +43,14 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Link to="/" className="group flex items-center gap-2">
+        <a href="#home" onClick={(e) => { e.preventDefault(); handleHashClick("home"); }} className="group flex items-center gap-2">
           <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-primary font-bold text-primary-foreground shadow-glow">
             KB
           </span>
           <span className="hidden text-base font-semibold tracking-wide sm:inline">
             Kaviya<span className="text-gradient">Balamurugan</span>
           </span>
-        </Link>
+        </a>
 
         <ul className="hidden items-center gap-1 lg:flex">
           {links.map((l) => (
@@ -74,8 +66,6 @@ export function Navbar() {
           ))}
         </ul>
 
-
-
         <button
           type="button"
           aria-label="Toggle menu"
@@ -90,7 +80,7 @@ export function Navbar() {
         <div className="glass border-t border-border lg:hidden">
           <ul className="flex flex-col p-4">
             {links.map((l) => (
-              <li key={l.hash}>
+               <li key={l.hash}>
                 <button
                   type="button"
                   onClick={() => handleHashClick(l.hash)}

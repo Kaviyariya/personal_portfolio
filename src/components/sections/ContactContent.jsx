@@ -1,25 +1,10 @@
-import { useState } from "react";
 import { Mail, MapPin, User } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
-import { toast } from "sonner";
 
 export function ContactContent() {
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-  const [sending, setSending] = useState(false);
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setSending(true);
-    setTimeout(() => {
-      setSending(false);
-      toast.success("Thanks! Your message has been noted.");
-      setForm({ name: "", email: "", message: "" });
-    }, 600);
-  };
-
   return (
     <div className="mx-auto grid max-w-5xl gap-10 lg:grid-cols-2">
       <div className="space-y-6">
@@ -65,15 +50,20 @@ export function ContactContent() {
       </div>
 
       <form
-        onSubmit={handleSubmit}
+        action="https://api.web3forms.com/submit"
+        method="POST"
         className="space-y-4 rounded-2xl border border-border bg-gradient-card p-6 shadow-card"
       >
+        {/* Web3Forms Access Key - You need to replace this! */}
+        <input type="hidden" name="access_key" value="498cd4cc-1c75-49c3-b64b-ccbedfb2c29a" />
+        <input type="hidden" name="subject" value="New Contact from Portfolio!" />
+        <input type="checkbox" name="botcheck" className="hidden" />
+        
         <div className="space-y-2">
           <Label htmlFor="name">Name</Label>
           <Input
             id="name"
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
+            name="name"
             placeholder="Your name"
             required
           />
@@ -83,8 +73,7 @@ export function ContactContent() {
           <Input
             id="email"
             type="email"
-            value={form.email}
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
+            name="email"
             placeholder="you@example.com"
             required
           />
@@ -93,8 +82,7 @@ export function ContactContent() {
           <Label htmlFor="message">Message</Label>
           <Textarea
             id="message"
-            value={form.message}
-            onChange={(e) => setForm({ ...form, message: e.target.value })}
+            name="message"
             placeholder="Tell me about your project or just say hi..."
             rows={5}
             required
@@ -102,10 +90,9 @@ export function ContactContent() {
         </div>
         <Button
           type="submit"
-          disabled={sending}
           className="w-full bg-gradient-primary text-primary-foreground shadow-glow hover:opacity-90"
         >
-          {sending ? "Sending..." : "Send Message"}
+          Send Message
         </Button>
       </form>
     </div>

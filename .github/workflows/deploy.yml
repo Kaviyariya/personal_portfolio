@@ -31,12 +31,12 @@ jobs:
         run: npm ci
 
       - name: Build static site
-        run: npm run build:static
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist-static
+          path: ./dist
 
   deploy:
     environment:
