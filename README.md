@@ -4,11 +4,11 @@
 
 > A modern, responsive personal portfolio website built with React, Vite, and Tailwind CSS.
 
-## 🔗 Live Demo
+## Live Demo
 
 **[https://kaviyariya.github.io/personal_portfolio](https://kaviyariya.github.io/personal_portfolio)**
 
-## ✨ Features
+## Features
 
 - **Responsive Design** — Looks great on desktop, tablet, and mobile
 - **Smooth Animations** — Polished UI with transitions and hover effects
@@ -17,7 +17,7 @@
 - **Fast Performance** — Vite-powered build for optimal loading speeds
 - **Accessible** — Semantic HTML and ARIA-friendly components
 
-## 🛠 Tech Stack
+## Tech Stack
 
 | Category | Technology |
 |----------|-----------|
@@ -29,7 +29,7 @@
 | Icons | [Lucide React](https://lucide.dev/) |
 | Forms | [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 personal_portfolio/
@@ -49,7 +49,7 @@ personal_portfolio/
 └── README.md
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -79,7 +79,7 @@ npm run build
 
 The static files will be generated in the `dist/` directory.
 
-## 📝 Scripts
+## Scripts
 
 | Script | Description |
 |--------|-------------|
@@ -90,7 +90,7 @@ The static files will be generated in the `dist/` directory.
 | `npm run lint` | Run ESLint |
 | `npm run format` | Format code with Prettier |
 
-## 🌐 Deployment
+## Deployment
 
 This project is automatically deployed to **GitHub Pages** via GitHub Actions on every push to the `master` branch.
 
@@ -105,7 +105,7 @@ To enable GitHub Pages:
 3. The workflow `.github/workflows/deploy.yml` will run automatically on push
 4. Your site will be live at `https://kaviyariya.github.io/personal_portfolio`
 
-## 🎨 Customization
+## Customization
 
 ### Update Your Information
 
@@ -120,7 +120,7 @@ Edit the relevant files to customize your portfolio:
 2. Add the route in `src/routes/`
 3. Update the router configuration in `src/router.jsx`
 
-## 📦 Dependencies
+## Dependencies
 
 All dependencies are listed in `package.json`. Key packages:
 - **react** — UI library
@@ -130,7 +130,7 @@ All dependencies are listed in `package.json`. Key packages:
 - **react-hook-form** — Form management
 - **zod** — Schema validation
 
-## 🧪 Testing & Linting
+## Testing & Linting
 
 ```bash
 # Run ESLint
@@ -140,11 +140,11 @@ npm run lint
 npm run format
 ```
 
-## 📄 License
+## License
 
 This project is open source and available under the MIT License.
 
-## 🤝 Contributing
+## Contributing
 
 Found a bug or have a feature suggestion? Feel free to:
 1. Fork the repository
@@ -153,7 +153,7 @@ Found a bug or have a feature suggestion? Feel free to:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## 📬 Contact
+## Contact
 
 Feel free to reach out if you have any questions or suggestions!
 
@@ -162,4 +162,4 @@ Feel free to reach out if you have any questions or suggestions!
 
 ---
 
-Built with ❤️ by **Kaviya Balamurugan**
+Built with love by **Kaviya Balamurugan**
