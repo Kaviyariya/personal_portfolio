@@ -13,7 +13,7 @@ const certifications = [
   {
     title: "Java Full Stack Development",
     org: "Wipro TalentNext",
-    link: "https://drive.google.com/file/d/1sYWswOmO6AWCAgzAHv1kdn3DRDK3LC-Z/view?usp=sharing",
+    link: "https://drive.google.com/file/d/1WIEA_xeuDGoa5CA7b2wVvez_30OEZRPz/view?usp=drive_link",
   },
   {
     title: "AWS Cloud Practitioner Essentials",
@@ -75,7 +75,7 @@ export function ExperienceContent() {
               href={cert.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-between rounded-2xl border border-border bg-card/40 p-5 backdrop-blur transition-smooth hover:border-accent hover:bg-accent/5 hover:shadow-glow"
+              className="group flex items-center justify-between rounded-2xl border border-border bg-card/40 p-5 backdrop-blur transition-smooth hover:border-accent hover:bg-accent/5 hover:shadow-[...]"
             >
               <div>
                 <h3 className="font-bold transition-smooth group-hover:text-accent">
