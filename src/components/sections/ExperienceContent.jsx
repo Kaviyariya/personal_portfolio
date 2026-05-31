@@ -11,7 +11,7 @@ const experience = [
 
 const certifications = [
   {
-    title: "Java Full Stack Development",
+    title: "Java Basic",
     org: "Wipro TalentNext",
     link: "https://drive.google.com/file/d/1WIEA_xeuDGoa5CA7b2wVvez_30OEZRPz/view?usp=drive_link",
   },
