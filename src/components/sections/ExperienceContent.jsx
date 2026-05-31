@@ -16,6 +16,11 @@ const certifications = [
     link: "https://drive.google.com/file/d/1WIEA_xeuDGoa5CA7b2wVvez_30OEZRPz/view?usp=drive_link",
   },
   {
+    title: "SQL Intermediate",
+    org: "HackerRank",
+    link: "https://drive.google.com/file/d/15YfRTylfu5R6fasNctvdGHeRM0xAq-Pf/view?usp=drive_link",
+  },
+  {
     title: "AWS Cloud Practitioner Essentials",
     org: "Amazon Web Services",
     link: "https://drive.google.com/file/d/1sYWswOmO6AWCAgzAHv1kdn3DRDK3LC-Z/view?usp=sharing",
