@@ -21,19 +21,9 @@ const certifications = [
     link: "https://drive.google.com/file/d/15YfRTylfu5R6fasNctvdGHeRM0xAq-Pf/view?usp=drive_link",
   },
   {
-    title: "AWS Cloud Practitioner Essentials",
-    org: "Amazon Web Services",
-    link: "https://drive.google.com/file/d/1sYWswOmO6AWCAgzAHv1kdn3DRDK3LC-Z/view?usp=sharing",
-  },
-  {
-    title: "Python for Data Science",
+    title: "HCI NPTEL",
     org: "NPTEL",
-    link: "https://drive.google.com/file/d/1sYWswOmO6AWCAgzAHv1kdn3DRDK3LC-Z/view?usp=sharing",
-  },
-  {
-    title: "Data Science Internship Certificate",
-    org: "Nitroware",
-    link: "https://drive.google.com/file/d/1sYWswOmO6AWCAgzAHv1kdn3DRDK3LC-Z/view?usp=sharing",
+    link: "https://drive.google.com/file/d/15YfRTylfu5R6fasNctvdGHeRM0xAq-Pf/view?usp=drive_link",
   },
 ];
 
