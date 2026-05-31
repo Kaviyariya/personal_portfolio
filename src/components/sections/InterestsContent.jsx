@@ -1,10 +1,9 @@
 const interests = [
-  "Open Source Contribution",
+  "Building Web Applications",
+  "Learning New Technologies",
   "Cloud Computing",
   "Problem Solving",
-  "UI/UX Design",
-  "Tech Blogging",
-  "Hackathons",
+  "Reading Tech Blogs",
 ];
 
 export function InterestsContent() {
