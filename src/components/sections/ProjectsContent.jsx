@@ -28,24 +28,6 @@ const projects = [
     demo: "#",
     code: "https://github.com/Kaviyariya",
   },
-  {
-    title: "Cloud-Native Inventory Manager",
-    description:
-      "Scalable inventory tracking system deployed on AWS. Utilizes S3 for storage and Lambda for serverless processing.",
-    tags: ["AWS", "Spring Boot", "S3", "Lambda"],
-    emoji: "☁️",
-    demo: "#",
-    code: "https://github.com/Kaviyariya",
-  },
-  {
-    title: "Predictive Maintenance Engine",
-    description:
-      "An AI-driven system that analyzes sensor data to predict equipment failure before it happens, reducing downtime.",
-    tags: ["Python", "Scikit-Learn", "FastAPI", "IoT"],
-    emoji: "⚙️",
-    demo: "#",
-    code: "https://github.com/Kaviyariya",
-  },
 ];
 
 export function ProjectsContent() {
