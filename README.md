@@ -2,11 +2,24 @@
 
 [![Deploy to GitHub Pages](https://github.com/Kaviyariya/personal_portfolio/actions/workflows/deploy.yml/badge.svg)](https://github.com/Kaviyariya/personal_portfolio/actions/workflows/deploy.yml)
 
-> A modern, responsive personal portfolio website built with React, Vite, and Tailwind CSS.
+> A modern, responsive personal portfolio website built with React, Vite, and Tailwind CSS showcasing impactful projects.
 
 ## Live Demo
 
 **[https://kaviyariya.github.io/personal_portfolio](https://kaviyariya.github.io/personal_portfolio)**
+
+## Featured Projects
+
+### 1. **FailForward** 
+Learn from failure with our innovative platform designed to help individuals and teams embrace mistakes as learning opportunities.
+- **GitHub**: [Kaviyariya/failforward](https://github.com/Kaviyariya/failforward)
+- **Status**: Active Development
+
+### 2. **CareerPath AI**
+An intelligent career guidance system that uses AI to provide personalized career recommendations, skill assessments, and growth strategies tailored to your goals.
+
+### 3. **Autism Support System**
+A comprehensive digital platform providing resources, community support, and tools specifically designed to assist individuals on the autism spectrum.
 
 ## Features
 
