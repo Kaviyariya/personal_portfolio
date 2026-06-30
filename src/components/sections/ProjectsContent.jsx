@@ -17,7 +17,7 @@ const projects = [
     tags: ["React", "Python", "AI/ML", "TailwindCSS"],
     emoji: "🎯",
     demo: "#",
-    code: "#",
+    code: "https://github.com/Kaviyariya/career-assistance",
   },
   {
     title: "Autism Support System",
@@ -26,7 +26,7 @@ const projects = [
     tags: ["React", "Node.js", "MongoDB", "Accessibility"],
     emoji: "🤝",
     demo: "#",
-    code: "#",
+    code: "https://github.com/Kaviyariya/autisum_support_system",
   },
 ];
 
