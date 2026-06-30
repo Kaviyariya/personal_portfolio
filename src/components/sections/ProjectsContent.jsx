@@ -2,31 +2,31 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "AI Learning Companion",
+    title: "FailForward",
     description:
-      "A personalized education platform that adapts study plans and generates quizzes using the MERN Stack and Python. Focuses on individual learning paces.",
-    tags: ["MongoDB", "Express", "React", "Node.js", "Python"],
-    emoji: "📚",
+      "An innovative platform designed to help individuals and teams embrace mistakes as learning opportunities. Learn from failure with structured guidance and community support.",
+    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+    emoji: "🚀",
     demo: "#",
-    code: "https://github.com/Kaviyariya",
+    code: "https://github.com/Kaviyariya/failforward",
   },
   {
-    title: "AI Assistant for Autism Support",
+    title: "CareerPath AI",
     description:
-      "A conversational tool designed to provide emotional guidance and daily activity suggestions for individuals with autism. Built for accessibility.",
-    tags: ["React", "Python", "NLP", "Tailwind CSS"],
+      "An intelligent career guidance system that uses AI to provide personalized career recommendations, skill assessments, and growth strategies tailored to your goals.",
+    tags: ["React", "Python", "AI/ML", "TailwindCSS"],
+    emoji: "🎯",
+    demo: "#",
+    code: "#",
+  },
+  {
+    title: "Autism Support System",
+    description:
+      "A comprehensive digital platform providing resources, community support, and tools specifically designed to assist individuals on the autism spectrum.",
+    tags: ["React", "Node.js", "MongoDB", "Accessibility"],
     emoji: "🤝",
     demo: "#",
-    code: "https://github.com/Kaviyariya",
-  },
-  {
-    title: "Online Food Delivery System",
-    description:
-      "A robust backend system for managing restaurant orders and menus. Features real-time tracking and order management.",
-    tags: ["Java", "Spring Boot", "MySQL", "REST API"],
-    emoji: "🍕",
-    demo: "#",
-    code: "https://github.com/Kaviyariya",
+    code: "#",
   },
 ];
 
